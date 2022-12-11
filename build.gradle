@@ -6,11 +6,11 @@ plugins {
 jar {
 	manifest {
 		attributes(
-				'Main-Class': 'com.ing3.votaciones.VotacionesApplication'
+				'Main-Class': 'com.ing.votaciones.VotacionesApplication'
 		)
 	}
 }
-group = 'com.ing3'
+group = 'com.ing'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
@@ -43,6 +43,3 @@ dependencies {
 
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
