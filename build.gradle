@@ -6,7 +6,7 @@ plugins {
 jar {
 	manifest {
 		attributes(
-				'Main-Class': 'votaciones.votacionesapplication'
+				'Main-Class': 'votaciones.votacionesApplication'
 		)
 	}
 }
