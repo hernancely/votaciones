@@ -10,6 +10,9 @@ jar {
 		)
 	}
 }
+springBoot {
+	mainClassName = "com.ing.votaciones.VotacionesApplication"
+}
 group = 'com.ing'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
