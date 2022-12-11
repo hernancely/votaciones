@@ -3,14 +3,18 @@ server:
   servlet:
     context-path: /votaciones/
 spring:
-
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/votaciones?createDatabaseIfNotExist=true
-    username: root
-    password: Ct2010**
+    url: jdbc:h2:mem:votaciones
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+    h2:
+      console:
+        console.enabled: true
+        path: /h2-console
+        settings.trace: false
+        settings.web-allow-others: false
   jpa:
-    hibernate:
-      ddl-auto: update
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
 
-    show-sql: true
+
