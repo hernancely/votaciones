@@ -16,6 +16,6 @@ import java.util.List;
 @Repository
 public interface VotosRepository extends JpaRepository<Votacion,Integer> {
 
-    @Query(value = "select NEW com.ing3.votaciones.votos.model.Conteo( v.candidatoId,count(v.candidatoId)) from Votacion v group by v.candidatoId")
+    @Query(value = "select NEW com.ing.votaciones.votos.model.Conteo( v.candidatoId,count(v.candidatoId)) from Votacion v group by v.candidatoId")
     List<Conteo> countAll();
 }
