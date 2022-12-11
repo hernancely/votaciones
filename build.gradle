@@ -3,7 +3,13 @@ plugins {
 	id 'org.springframework.boot' version '2.7.6'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
-
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'com.ing3.votaciones'
+		)
+	}
+}
 group = 'com.ing3'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
